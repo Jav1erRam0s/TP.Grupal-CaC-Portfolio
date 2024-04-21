@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* NAVBAR */
+
+  /* SOBRE MI */
+  --sobre-mi-backgroud: hotpink;
+
+  /* EXPERIENCIA LABORAL */
+
+  /* FORMACION ACADEMICA */
+
+  /* CAPACITACIONES */
+
+  /* PROYECTOS */
+
+  /* CONTACTEMONOS */
+}
+
+/* ******************************************************************* */
+
+/* NAVBAR */
+
+/* SOBRE MI */
+
+#sobre-mi {
+  background-color: var(--sobre-mi-backgroud);
+}
+
+/* EXPERIENCIA LABORAL */
+
+/* FORMACION ACADEMICA */
+
+/* CAPACITACIONES */
+
+/* PROYECTOS */
+
+/* CONTACTEMONOS */
