@@ -1,13 +1,23 @@
+/* ************************************************** */
+/* NORMALIZACION */
+/* ************************************************** */
+
 * {
   margin: 0;
   padding: 0;
 }
+
+/* ************************************************** */
+/* DEFINICION DE VARIABLES */
+/* ************************************************** */
 
 :root {
   /* NAVBAR */
 
   /* SOBRE MI */
   --sobre-mi-backgroud: hotpink;
+  --sobre-mi-tablet-backgroud: lime;
+  --sobre-mi-mobile-backgroud: cadetblue;
 
   /* EXPERIENCIA LABORAL */
 
@@ -18,9 +28,61 @@
   /* PROYECTOS */
 
   /* CONTACTEMONOS */
+
+  /* FOOTER */
 }
 
-/* ******************************************************************* */
+/* ************************************************** */
+/* MEDIA QUERIES */
+/* ************************************************** */
+
+/* Media Queries TABLETS */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* NAVBAR */
+
+  /* SOBRE MI */
+  #sobre-mi {
+    background-color: var(--sobre-mi-tablet-backgroud) !important;
+  }
+
+  /* EXPERIENCIA LABORAL */
+
+  /* FORMACION ACADEMICA */
+
+  /* CAPACITACIONES */
+
+  /* PROYECTOS */
+
+  /* CONTACTEMONOS */
+
+  /* FOOTER */
+}
+
+/* Media Queries MOBILES */
+@media (max-width: 767px) {
+  /* NAVBAR */
+
+  /* SOBRE MI */
+  #sobre-mi {
+    background-color: var(--sobre-mi-mobile-backgroud) !important;
+  }
+
+  /* EXPERIENCIA LABORAL */
+
+  /* FORMACION ACADEMICA */
+
+  /* CAPACITACIONES */
+
+  /* PROYECTOS */
+
+  /* CONTACTEMONOS */
+
+  /* FOOTER */
+}
+
+/* ************************************************** */
+/* ESTILOS DEFAULT ( ESCRITORIO ) */
+/* ************************************************** */
 
 /* NAVBAR */
 
@@ -39,3 +101,5 @@
 /* PROYECTOS */
 
 /* CONTACTEMONOS */
+
+/* FOOTER */
