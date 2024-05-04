@@ -12,70 +12,169 @@
 /* ************************************************** */
 
 :root {
+  /* GENERAL */
+  --scroll-bar-color: #f1c40f;
+  --scroll-background: #212529;
+
+  --default-background-color: #212529;
+  --default-font-color: whitesmoke;
+  --default-color: #f1c40f;
+
   /* NAVBAR */
+  --navbar-background: #212529;
+  --navbar-link-hover-color: #f1c40f;
 
   /* SOBRE MI */
-  --sobre-mi-backgroud: hotpink;
-  --sobre-mi-tablet-backgroud: lime;
-  --sobre-mi-mobile-backgroud: cadetblue;
+  --sobre-mi-background: firebrick;
 
   /* EXPERIENCIA LABORAL */
+  --experiencia-laboral-background: darkorange;
 
-  /* FORMACION ACADEMICA */
-
-  /* CAPACITACIONES */
+  /* EDUCACION */
+  --educacion-background: gold;
 
   /* PROYECTOS */
+  --proyectos-background: cyan;
 
   /* CONTACTEMONOS */
+  --contactemonos-background: dodgerblue;
 
   /* FOOTER */
+  --footer-background: #212529;
+}
+
+/* ************************************************** */
+/* GOOGLE FONTS */
+/* ************************************************** */
+
+.chakra-petch-light {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.chakra-petch-regular {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chakra-petch-medium {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.chakra-petch-semibold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.chakra-petch-bold {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.chakra-petch-light-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.chakra-petch-regular-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.chakra-petch-medium-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.chakra-petch-semibold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.chakra-petch-bold-italic {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
 
 /* ************************************************** */
 /* MEDIA QUERIES */
 /* ************************************************** */
 
-/* Media Queries TABLETS */
+/* For TABLETS */
 @media (min-width: 768px) and (max-width: 1024px) {
   /* NAVBAR */
+  #navbar {
+    padding: 0 30px !important;
+  }
 
   /* SOBRE MI */
   #sobre-mi {
-    background-color: var(--sobre-mi-tablet-backgroud) !important;
+    padding: 0 50px !important;
   }
 
   /* EXPERIENCIA LABORAL */
+  #experiencia-laboral {
+    padding: 0 50px !important;
+  }
 
-  /* FORMACION ACADEMICA */
-
-  /* CAPACITACIONES */
+  /* EDUCACION */
+  #educacion {
+    padding: 0 50px !important;
+  }
 
   /* PROYECTOS */
+  #proyectos {
+    padding: 0 50px !important;
+  }
 
   /* CONTACTEMONOS */
-
+  #contactemonos {
+    padding: 0 50px !important;
+  }
   /* FOOTER */
 }
 
-/* Media Queries MOBILES */
+/* For MOBILES */
 @media (max-width: 767px) {
   /* NAVBAR */
-
+  #navbar {
+    padding: 0 10px !important;
+  }
   /* SOBRE MI */
   #sobre-mi {
-    background-color: var(--sobre-mi-mobile-backgroud) !important;
+    padding: 0 30px !important;
   }
 
   /* EXPERIENCIA LABORAL */
+  #experiencia-laboral {
+    padding: 0 30px !important;
+  }
 
-  /* FORMACION ACADEMICA */
-
-  /* CAPACITACIONES */
+  /* EDUCACION */
+  #educacion {
+    padding: 0 30px !important;
+  }
 
   /* PROYECTOS */
+  #proyectos {
+    padding: 0 30px !important;
+  }
 
   /* CONTACTEMONOS */
+  #contactemonos {
+    padding: 0 30px !important;
+  }
 
   /* FOOTER */
 }
@@ -84,22 +183,86 @@
 /* ESTILOS DEFAULT ( ESCRITORIO ) */
 /* ************************************************** */
 
+html {
+  scrollbar-color: var(--scroll-bar-color) var(--scroll-background);
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
 /* NAVBAR */
+#navbar {
+  background-color: var(--navbar-background);
+  padding: 0 50px;
+}
+
+.nav-link:hover{
+  color: var(--navbar-link-hover-color) !important;
+  transition: 0.3s;
+}
+
 
 /* SOBRE MI */
-
 #sobre-mi {
-  background-color: var(--sobre-mi-backgroud);
+  background-color: var(--sobre-mi-background);
+  color: var(--default-font-color);
+
+  padding: 0 70px;
+
+  min-height: calc(100vh - 56px);
 }
 
 /* EXPERIENCIA LABORAL */
+#experiencia-laboral {
+  background-color: var(--experiencia-laboral-background);
 
-/* FORMACION ACADEMICA */
+  padding: 0 70px;
 
-/* CAPACITACIONES */
+  min-height: calc(100vh - 56px);
+}
+
+/* EDUCACION */
+#educacion {
+  background-color: var(--educacion-background);
+
+  padding: 0 70px;
+
+  min-height: calc(100vh - 56px);
+}
 
 /* PROYECTOS */
+#proyectos {
+  background-color: var(--proyectos-background);
+
+  padding: 0 70px;
+
+  min-height: calc(100vh - 56px);
+}
 
 /* CONTACTEMONOS */
+#contactemonos {
+  background-color: var(--contactemonos-background);
+
+  padding: 0 70px;
+
+  min-height: calc(100vh - 56px);
+}
 
 /* FOOTER */
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--footer-background);
+  color: var(--default-font-color);
+
+  height: 56px;
+
+  margin-top: auto; /* Esto empujará el último elemento hacia abajo */
+}
