@@ -25,19 +25,19 @@
   --navbar-link-hover-color: #f1c40f;
 
   /* SOBRE MI */
-  --sobre-mi-background: firebrick;
+  --sobre-mi-background: teal;
 
   /* EXPERIENCIA LABORAL */
-  --experiencia-laboral-background: darkorange;
+  --experiencia-laboral-background: whitesmoke;
 
   /* EDUCACION */
-  --educacion-background: gold;
+  --educacion-background: lightgrey;
 
   /* PROYECTOS */
-  --proyectos-background: cyan;
+  --proyectos-background: whitesmoke;
 
   /* CONTACTEMONOS */
-  --contactemonos-background: dodgerblue;
+  --contactemonos-background: lightgrey;
 
   /* FOOTER */
   --footer-background: #212529;
