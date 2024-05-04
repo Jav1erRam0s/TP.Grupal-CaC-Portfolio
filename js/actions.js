@@ -29,3 +29,19 @@ $(function () {
     navMain.collapse("hide");
   });
 });
+
+/* ************************************************** */
+
+// Permite redireccionar a la seccion "proyecto" al hacer click en los indicadores
+// document.addEventListener("DOMContentLoaded", function () {
+//   const indicators = document.querySelectorAll(
+//     "#carouselExampleIndicators .carousel-indicators button"
+//   );
+//   indicators.forEach((indicator, index) => {
+//     indicator.addEventListener("click", () => {
+//       // Redirige a la sección correspondiente
+//       scrollToSection("proyectos");
+//       // window.location.href = `#proyectos`;
+//     });
+//   });
+// });
