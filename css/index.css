@@ -236,6 +236,83 @@ body {
   padding: 0 70px;
 
   min-height: calc(100vh - 56px);
+  display: flex;
+}
+
+.container {
+
+padding: 45px 200px;
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+}
+
+.boton {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 35px;
+  color: white;
+  border-radius: 40px;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  background: var(--default-color);
+  transition: all 0.3s ease;
+  
+}
+
+.boton:hover {
+  transform: scale(1.05);
+}
+
+#sobre-mi .home-info{
+  flex: 0 0 60%;
+  max-width: 60%;
+  margin: 15px 0;
+}
+
+h3.hola {
+  font-size: 28px;
+}
+
+h3.hola span {
+  font-family:fantasy;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--default-color)
+}
+
+h3.mi-profesion {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.typing {
+  font-family:fantasy;
+  /* color: var(--default-color) */
+}
+
+.home-info p{
+  margin-bottom: 70px;
+  font-size: 20px;
+}
+
+#sobre-mi .home-img {
+  flex: 0 0 40%;
+  max-width: 40%;
+  text-align: center;
+  position: relative;
+}
+
+#sobre-mi .home-img img{
+  height: 8%;
+
+
 }
 
 /* EXPERIENCIA LABORAL */
