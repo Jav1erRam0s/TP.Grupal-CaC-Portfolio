@@ -38,6 +38,8 @@
 
   /* CONTACTEMONOS */
   --contactemonos-background: lightgrey;
+  --contactemonos-btn: #212529;
+  --contactemonos-enviar: whitesmoke;
 
   /* FOOTER */
   --footer-background: #212529;
@@ -123,6 +125,15 @@
     padding: 0 50px !important;
   }
 
+  #sobre-mi .home-img{
+    display: none;
+  }
+
+  #sobre-mi .home-info{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   /* EXPERIENCIA LABORAL */
   #experiencia-laboral {
     padding: 0 50px !important;
@@ -159,6 +170,15 @@
   /* SOBRE MI */
   #sobre-mi {
     padding: 0 30px !important;
+  }
+
+  #sobre-mi .home-img{
+    display: none;
+  }
+
+  #sobre-mi .home-info{
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
   /* EXPERIENCIA LABORAL */
@@ -240,9 +260,7 @@ body {
 }
 
 .container {
-
 padding: 45px 200px;
-
 }
 
 .row {
@@ -270,7 +288,7 @@ padding: 45px 200px;
   transform: scale(1.05);
 }
 
-#sobre-mi .home-info{
+.home-info{
   flex: 0 0 60%;
   max-width: 60%;
   margin: 15px 0;
@@ -302,7 +320,7 @@ h3.mi-profesion {
   font-size: 20px;
 }
 
-#sobre-mi .home-img {
+.home-img {
   flex: 0 0 40%;
   max-width: 40%;
   text-align: center;
@@ -310,7 +328,7 @@ h3.mi-profesion {
 }
 
 #sobre-mi .home-img img{
-  height: 8%;
+  height: 400px;
 
 
 }
@@ -410,6 +428,53 @@ h3.mi-profesion {
   padding: 0 70px;
 
   min-height: calc(100vh - 56px);
+}
+
+.title-contact {
+  text-align: center;
+  margin: 30px;
+}
+
+
+#contactemonos form div {
+  margin-bottom: 15px;
+}
+
+#contactemonos form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contactemonos form input[type="text"],
+#contactemonos form input[type="email"],
+#contactemonos form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contactemonos form textarea {
+  height: 150px;
+}
+
+#contactemonos form button {
+  
+  padding: 10px 20px;
+  background-color: var(--contactemonos-btn);
+  color: var(--contactemonos-enviar);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-form {
+  text-align: center;
+}
+
+#contactemonos h6 {
+
+  margin-bottom: 30px;
 }
 
 /* FOOTER */
