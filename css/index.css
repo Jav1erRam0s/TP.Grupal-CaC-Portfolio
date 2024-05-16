@@ -256,8 +256,7 @@ body {
 
   min-height: calc(100vh - 56px);
   display: flex;
-
-  background-image: url("../../img/sobre-mi/fondo3.jpg");
+  background-image: url("/img/sobre-mi/fondo3.jpg");
   background-size: cover;
   background-position: center;
 }
