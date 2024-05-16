@@ -250,7 +250,6 @@ body {
 
 /* SOBRE MI */
 #sobre-mi {
-  background-color: var(--sobre-mi-background);
   color: var(--default-font-color);
 
   padding: 0 70px;
@@ -258,7 +257,7 @@ body {
   min-height: calc(100vh - 56px);
   display: flex;
 
-  background-image: url(/Tp_grupal/TP.Grupal-CaC-Portfolio/img/sobre-mi/fondo3.jpg);
+  background-image: url("../../img/sobre-mi/fondo3.jpg");
   background-size: cover;
   background-position: center;
 }
