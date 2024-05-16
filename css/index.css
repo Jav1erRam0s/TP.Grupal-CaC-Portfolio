@@ -251,7 +251,7 @@ body {
 #educacion {
   background-color: var(--educacion-background);
 
-  padding: 35px 70px 0px;
+  padding: 35px 70px;
   
   min-height: calc(100vh - 56px);
 }
@@ -259,18 +259,6 @@ body {
 .row{
   padding-top: 30px;
   padding-bottom: 0px;
-  text-align: center;
-}
-
-.card{
-  border-color: black !important;
-  border-style: double !important;
-  border-width: 5px !important;
-  margin: 35px;
-  padding: 50px;
-}
-
-.certificaciones{
   text-align: center;
 }
 
