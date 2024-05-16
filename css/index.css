@@ -38,6 +38,8 @@
 
   /* CONTACTEMONOS */
   --contactemonos-background: lightgrey;
+  --contactemonos-btn: #212529;
+  --contactemonos-enviar: whitesmoke;
 
   /* FOOTER */
   --footer-background: #212529;
@@ -123,6 +125,15 @@
     padding: 0 50px !important;
   }
 
+  #sobre-mi .home-img{
+    display: none;
+  }
+
+  #sobre-mi .home-info{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   /* EXPERIENCIA LABORAL */
   #experiencia-laboral {
     padding: 0 50px !important;
@@ -159,6 +170,15 @@
   /* SOBRE MI */
   #sobre-mi {
     padding: 0 30px !important;
+  }
+
+  #sobre-mi .home-img{
+    display: none;
+  }
+
+  #sobre-mi .home-info{
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
   /* EXPERIENCIA LABORAL */
@@ -236,6 +256,84 @@ body {
   padding: 0 70px;
 
   min-height: calc(100vh - 56px);
+  display: flex;
+
+  background-image: url(/Tp_grupal/TP.Grupal-CaC-Portfolio/img/sobre-mi/fondo3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+padding: 45px 200px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+}
+
+.boton {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 35px;
+  color: var(--contactemonos-btn);
+  border-radius: 40px;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  background: var(--default-color);
+  transition: all 0.3s ease;
+}
+
+.boton:hover {
+  transform: scale(1.05);
+}
+
+.home-info{
+  flex: 0 0 60%;
+  max-width: 60%;
+  margin: 15px 0;
+}
+
+h3.hola {
+  font-size: 28px;
+}
+
+h3.hola span {
+  font-family:fantasy;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--default-color)
+}
+
+h3.mi-profesion {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.typing {
+  font-family:fantasy;
+  /* color: var(--default-color) */
+}
+
+.home-info p{
+  margin-bottom: 70px;
+  font-size: 20px;
+}
+
+.home-img {
+  flex: 0 0 40%;
+  max-width: 40%;
+  text-align: center;
+  position: relative;
+}
+
+#sobre-mi .home-img img{
+  height: 400px;
+  border-radius: 10%;
+
 }
 
 /* EXPERIENCIA LABORAL */
@@ -251,8 +349,8 @@ body {
 #educacion {
   background-color: var(--educacion-background);
 
-  padding: 35px 70px;
-  
+  padding: 35px 70px 0px;
+
   min-height: calc(100vh - 56px);
 }
 
@@ -419,6 +517,53 @@ body {
   padding: 0 70px;
 
   min-height: calc(100vh - 56px);
+}
+
+.title-contact {
+  text-align: center;
+  margin: 30px;
+}
+
+
+#contactemonos form div {
+  margin-bottom: 15px;
+}
+
+#contactemonos form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contactemonos form input[type="text"],
+#contactemonos form input[type="email"],
+#contactemonos form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contactemonos form textarea {
+  height: 150px;
+}
+
+#contactemonos form button {
+  
+  padding: 10px 20px;
+  background-color: var(--contactemonos-btn);
+  color: var(--contactemonos-enviar);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-form {
+  text-align: center;
+}
+
+#contactemonos h6 {
+
+  margin-bottom: 30px;
 }
 
 /* FOOTER */
