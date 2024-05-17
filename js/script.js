@@ -13,6 +13,7 @@ function validateForm(event) {
     let nombre = document.getElementById("nombre").value;
     let email = document.getElementById("email").value;
     let mensaje = document.getElementById("mensaje").value;
+    let servicios = document.getElementById("servicios").value;
   
     if (nombre.trim() === "") {
       alert("por favor ingresa un nombre");
@@ -22,6 +23,11 @@ function validateForm(event) {
     if (email.trim() === "") {
       alert("por favor ingresa un email");
       return false;
+    }
+
+    if (servicios.trim() === "") {
+      alert("por favor selecciona un servicio de interes");
+      return false; 
     }
 
     if (mensaje.trim() === "") {
