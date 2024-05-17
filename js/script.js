@@ -14,7 +14,8 @@ function validateForm(event) {
     let email = document.getElementById("email").value;
     let mensaje = document.getElementById("mensaje").value;
     let servicios = document.getElementById("servicios").value;
-  
+    let archivo = document.getElementById("archivo").value;
+    
     if (nombre.trim() === "") {
       alert("por favor ingresa un nombre");
       return false; 
@@ -34,7 +35,12 @@ function validateForm(event) {
       alert("por favor ingresa un mensaje");
       return false; 
     }
-  
+    
+    if (archivo.trim() === "") {
+      alert("por favor ingresa un archivo formato imagen");
+      return false; 
+    }
+
     if (!isValidEmail(email)) {
       alert("Por favor ingresa un MAIL VALIDO");
       return true;
