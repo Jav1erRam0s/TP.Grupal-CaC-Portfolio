@@ -141,7 +141,7 @@
 
   /* EXPERIENCIA LABORAL */
   #experiencia-laboral {
-    padding: 0 50px !important;
+    padding: 25px 50px !important;
   }
 
   /* EDUCACION */
@@ -412,7 +412,7 @@ h3.mi-profesion {
 #experiencia-laboral {
   background-color: var(--experiencia-laboral-background);
 
-  padding: 0 70px;
+  padding: 25px 70px;
 
   min-height: calc(100vh - 56px);
 }
