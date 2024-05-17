@@ -534,6 +534,8 @@ h3.mi-profesion {
 
 #contactemonos form input[type="text"],
 #contactemonos form input[type="email"],
+#contactemonos form input[type="file"],
+#contactemonos form select,
 #contactemonos form textarea {
   width: 100%;
   padding: 10px;

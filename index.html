@@ -475,11 +475,26 @@
         <input type="email" id="email" name="email" />
       </div>
       <div>
+        <label for="servicios">Seleccionar servicio de interes:</label>
+        <select id="servicios" name="servicios">
+          <option value="desarrollo-web">Desarrollo web</option>
+          <option value="backend">Backend</option>
+          <option value="frontend">Frontend</option>
+          <option value="desarrollo-movil">Desarrollo móvil</option>
+          <option value="aplicaciones-empresariales">Aplicaciones empresariales</option>
+          <option value="bases-de-datos">Bases de datos</option>
+        </select>
+      </div>
+      <div>
         <label for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" ></textarea>
       </div>
+      <div>
+        <label for="file">Seleccionar imagen:</label>
+        <input type="file" accept="image/jpeg, image/png" >
+      </div>
       <div class="btn-form">
-      <button type="submit">Enviar</button>
+        <button type="submit">Enviar</button>
       </div>
     </form>
       <div class="container-contact">

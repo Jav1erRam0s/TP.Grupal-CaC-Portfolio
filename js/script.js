@@ -12,15 +12,21 @@ function validateForm(event) {
     //inputs
     let nombre = document.getElementById("nombre").value;
     let email = document.getElementById("email").value;
+    let mensaje = document.getElementById("mensaje").value;
   
     if (nombre.trim() === "") {
       alert("por favor ingresa un nombre");
-      return false; // EVITA QUE SE ENVIE EL FORMULARIo
+      return false; 
     }
   
     if (email.trim() === "") {
       alert("por favor ingresa un email");
       return false;
+    }
+
+    if (mensaje.trim() === "") {
+      alert("por favor ingresa un mensaje");
+      return false; 
     }
   
     if (!isValidEmail(email)) {
